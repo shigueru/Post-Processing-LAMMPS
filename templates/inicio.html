@@ -1,0 +1,88 @@
+{% extends "general.html" %}
+
+{% block head %}
+
+<link rel=stylesheet type=text/css href="../static/css/inicio.css">
+
+{% endblock %}
+
+{% block contenido %}
+
+<section class="padding" id="cabe">
+	<div class="row">
+		<div class="column_12">
+			<h1 class="text center bold margin-top"> Post-Processing LAMMPS </h1>
+			<h4 class="text center margin-bottom">
+			Aplicacion para el post procesamiento de los distintos archivos
+			producidos por LAMMPS.
+			</h4>
+		<div>
+	</div>
+</section>
+<section class="padding" id="cuer">
+	<div class="row">
+		<div class="column_3 offset_2">
+			<article class="cabeza">
+				<h4 class="text thin center">Desplazamiento Medio
+				Cuadrado</h4><h3 class="text center bold">MSD</h3>
+			</article>
+			<article class="text justify">
+			Ordena los datos obtenidos de ejecutar el comando msd de Lammps,
+			escritos en un archivo.El resultado es un archivo ordenado en 5
+			columnas, siendo la primera el valor del instante de tiempo y las
+			restantes son los valores de MSD.
+			</article>
+			<article class="text right bold">
+				<a href="msd.html">Ir</a>
+			</article>
+		</div>
+		<div class="column_3 offset_2">
+			<article class="cabeza">
+				<h4 class="text thin center">Funcion de Distribucion
+				Radial</h4><h3 class="text bold center">RDF</h3>
+			</article>
+			<article class="text justify">
+			Ordena y clasifica los datos obtenidos de ejecutar el comando rdf de
+			Lammps, escritos en un archivo.El resultado son varios archivos
+			nombrados con el instante de tiempo con extension .txt dentro de
+			cada archivo se encuentran los valores de RDF.
+			</article>
+			<article class="text right bold">
+				<a href="rdf.html">Ir</a>
+			</article>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column_3 offset_2">
+			<article class="cabeza">
+				<h4 class="text thin center">Dislocaciones</h4>
+			</article>
+			<article class="text justify">
+			Calcula el número de dislocaciones por paso de tiempo, para ello
+			utiliza un rango del parametro de centro de simetria.Como resultado
+			se obtiene un archivo de texto ordenado en dos columnas; la primera
+			es el instante de tiempo y la segunda es el número de dislocaciones
+			halladas en dicho instante de tiempo.
+			</article>
+			<article class="text right bold">
+				<a href="dislocaciones.html">Ir</a>
+			</article>
+		</div>
+		<div class="column_3 offset_2">
+			<article class="cabeza">
+				<h4 class="text thin center">Estructuras</h4>
+			</article>
+			<article class="text justify">
+			Calcula la cantidad de cada tipo de estructura atómica en cada
+			instante de tiempo.Como resultado se obtiene un archivo con varias
+			columnas; siendo la primera el instante de tiempo, y las restantes
+			son las cantidades de estructuras.
+			</article>
+			<article class="text right bold">
+				<a href="estructuras.html">Ir</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

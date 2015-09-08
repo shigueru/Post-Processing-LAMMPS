@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="es">
+  <head>
+    <title>Nombre del programa </title>
+    <meta charset="utf-8" />
+    <link rel=stylesheet type=text/css href="../static/css/tuktuk.css">
+    <link rel=stylesheet type=text/css href="../static/css/tuktuk.grid.css">
+    <link rel=stylesheet type=text/css href="../static/css/tuktuk.icons.css">
+    <link rel=stylesheet type=text/css href="../static/css/tuktuk.theme.default.css">
+    <link rel=stylesheet type=text/css href="../static/css/general.css">
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <section class="bck dark">
+    	<div class="row text right padding">
+    		<a href="#menu">Menu</a>
+    	</div>
+    </section>
+    <div id="menu" class="modalDialog">
+    	<div>
+    		<a href="#close" title="Close" class="close">X</a>
+    		<div id="cssmenu">
+    		<ul>
+    			<li>
+					<a href="msd.html"><span>MSD</span></a>
+				</li>
+				<li>
+					<a href="rdf.html"><span>RDF</span></a>
+				</li>
+				<li>
+					<a href="dislocaciones.html"><span>Dislocaciones</span></a>
+				</li>
+				<li>
+					<a href="estructuras.html"><span>Estructuras</span></a>
+				</li>
+			</ul>
+			</div>
+    	</div>
+    </div>
+    {% block contenido %}{% endblock %}
+    <footer class="padding align center text small bck dark "> 
+    	<div class="row">
+    		<div class="offset_3 column_6">
+				<p class="text bold color theme">
+					Creado por : Shigueru Nagata
+				</p>
+    		</div>
+    	</div>
+    </footer>
+    <script src="../static/js/tuktuk.js"></script>
+  </body>
+</html>
